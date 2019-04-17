@@ -1,0 +1,407 @@
+.mine{
+  .download{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    z-index:100;
+    span{
+      cursor: pointer;
+      width: 429px;
+      height: 365px;
+      position: absolute;
+      left: 50%;
+      margin-left: -215px;
+      top: 50%;
+      margin-top: -183px;
+      background: url("../images/common/download.png") no-repeat;
+    }
+  }
+  .content{
+    position: relative;
+    .msg{
+      padding-top: 30px;
+      padding-bottom: 150px;
+      .left{
+        .user{
+          width: 270px;
+          height: 240px;
+          background: #fff;
+          margin-bottom: 30px;
+          overflow: hidden;
+          .img{
+            width: 88px;
+            height: 88px;
+            margin: 40px auto 27px;
+            img{
+              width: 88px;
+              height: 88px;
+              border-radius: 50%;
+            }
+          }
+          .txt{
+            width: 140px;
+            height: 40px;
+            margin: 0 auto;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #3C915C;
+          }
+        }
+        .list{
+          width: 270px;
+          height: 240px;
+          ul{
+            li{
+              width: 270px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+              font-size: 18px;
+              background: #F5F9F5;
+              position: relative;
+              a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                color: #333;
+                span{
+                  display: none;
+                  width: 4px;
+                  height: 60px;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  background: #3C915C;
+                }
+              }
+              &.cur{
+                background: #fff;
+                a{
+                  span{
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .right{
+        width: 920px;
+        .xinxi{
+          background: #fff;
+          height: 240px;
+          padding: 30px;
+          margin-bottom: 30px;
+          h3{
+            height: 30px;
+            font-size: 20px;
+            color: #3C915C;
+            margin-bottom: 20px;
+            .xiugai{
+              float: right;
+              cursor: pointer;
+              span{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                vertical-align: -2px;
+                margin-right: 5px;
+                background: url("../images/mine/xiugai.png") no-repeat;
+              }
+            }
+          }
+          ul{
+            overflow: hidden;
+            li{
+              float: left;
+              width: 400px;
+              color: #666;
+              margin-bottom: 30px;
+              span{
+                display: inline-block;
+                width: 6px;
+                height: 7px;
+                vertical-align: 2px;
+                margin-right: 5px;
+                cursor: pointer;
+                background: url("../images/mine/dian.png") no-repeat;
+              }
+              b{
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+    .favorite{
+      width: 920px;
+      left: 280px;
+      top: 300px;
+      min-height: 240px;
+      position: absolute;
+      padding: 0 30px 30px;
+      background: #fff;
+      ul{
+        li{
+          position: relative;
+          padding: 20px 0;
+          border-bottom: 1px solid #eaeaea;
+          &:hover{
+            span{
+              display: block;
+            }
+          }
+          span{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            background: url("../images/mine/del.png") no-repeat;
+          }
+          h4{
+            width: 600px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          p{
+            color: #666;
+          }
+        }
+      }
+      .page{
+        padding-top: 20px;
+        text-align: center;
+        .el-pagination .el-pager li.active{
+          background: #3C915C!important;
+        }
+      }
+      .nodata{
+        text-align: center;
+        height: 210px;
+        line-height: 210px;
+        font-size: 16px;
+      }
+    }
+    .join{
+      width: 920px;
+      left: 280px;
+      top: 300px;
+      min-height: 240px;
+      position: absolute;
+      padding: 0 30px 30px;
+      background: #fff;
+      ul{
+        li{
+          position: relative;
+          padding: 20px 0;
+          border-bottom: 1px solid #eaeaea;
+          span{
+            position: absolute;
+            right: 0;
+            top: 40px;
+            height: 24px;
+            color: #DE4F28;
+            font-size: 16px;
+            &.cur{
+              color: #3C915C;
+            }
+          }
+          h4{
+            width: 600px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            b{
+              color: #3C915C;
+              font-size: 16px;
+            }
+          }
+          p{
+            color: #666;
+          }
+        }
+      }
+      .page{
+        padding-top: 20px;
+        text-align: center;
+        .el-pagination .el-pager li.active{
+          background: #3C915C!important;
+        }
+      }
+      .nodata{
+        text-align: center;
+        height: 210px;
+        line-height: 210px;
+        font-size: 16px;
+      }
+    }
+    .activity{
+      width: 920px;
+      left: 280px;
+      top: 300px;
+      min-height: 240px;
+      position: absolute;
+      padding: 0 30px 30px;
+      background: #fff;
+      ul{
+        li{
+          position: relative;
+          padding: 20px 0;
+          cursor: pointer;
+          border-bottom: 1px solid #eaeaea;
+          span{
+            position: absolute;
+            right: 0;
+            top: 25px;
+            height: 24px;
+            color: #DE4F28;
+            font-size: 16px;
+            &.cur{
+              color: #3C915C;
+            }
+          }
+          h4{
+            width: 600px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            b{
+              color: #3C915C;
+              font-size: 16px;
+            }
+          }
+          p{
+            color: #666;
+          }
+        }
+      }
+      .page{
+        padding-top: 20px;
+        text-align: center;
+        .el-pagination .el-pager li.active{
+          background: #3C915C!important;
+        }
+      }
+      .nodata{
+        text-align: center;
+        height: 210px;
+        line-height: 210px;
+        font-size: 16px;
+      }
+    }
+    .order{
+      width: 920px;
+      left: 280px;
+      top: 300px;
+      min-height: 240px;
+      position: absolute;
+      padding: 0 30px 30px;
+      background: #fff;
+      h3{
+        width: 860px;
+        border-bottom: 1px solid #eaeaea;
+        span{
+          cursor: pointer;
+          display: inline-block;
+          width: 100px;
+          height: 50px;
+          line-height: 50px;
+          position: relative;
+          margin-right: 20px;
+          text-align: center;
+          &.cur{
+            b{
+              display: block;
+            }
+          }
+          b{
+            display: none;
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            left: 34px;
+            bottom: 0;
+            background: #3C915C;
+          }
+        }
+      }
+      ul{
+        li{
+          position: relative;
+          padding: 20px 0;
+          border-bottom: 1px solid #eaeaea;
+          span{
+            position: absolute;
+            right: 0;
+            top: 40px;
+            height: 24px;
+            color: #DE4F28;
+            font-size: 16px;
+            &.cur{
+              cursor: pointer;
+              width: 60px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              background: #3C915C;
+              color: #fff;
+            }
+          }
+          b{
+            position: absolute;
+            right: 0;
+            top: 30px;
+            height: 24px;
+            color: #3C915C;
+            font-size: 16px;
+          }
+          h4{
+            width: 600px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            b{
+              color: #3C915C;
+              font-size: 16px;
+            }
+          }
+          p{
+            color: #666;
+          }
+        }
+        .nodata{
+          text-align: center;
+          height: 160px;
+          line-height: 160px;
+          font-size: 16px;
+        }
+      }
+      .page{
+        padding-top: 20px;
+        text-align: center;
+        .el-pagination .el-pager li.active{
+          background: #3C915C!important;
+        }
+      }
+    }
+  }
+}
